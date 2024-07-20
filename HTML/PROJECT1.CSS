@@ -1,0 +1,10 @@
+p { color:red; background-color:yellow;}
+     li {color:green;}
+     h1 {color:blue;font: size 24px;}
+     p {text-align:center;font-weight:bold;} 
+     blockquote { border:1px;padding:10px} 
+     a{color:red;background-color:hsl (167, 100%, 50%);text-decoration: none;}
+     table{border-collapse: collapse;Width:100%}
+     h1{padding:20px;background-color:white }
+    div {background-color :#F5F5F5;border:1px solid #CCCCCC;}
+    span{ color:purple;font-style:italic;}

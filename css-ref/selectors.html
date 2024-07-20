@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        * { font-family: monospace;}
+        h1 {
+            color: red;
+        }
+        h2,
+        h3 {
+            color: blue;
+        }
+        h4 {
+            color: yellowgreen;
+        }
+        
+        div p {
+            background-color: yellow;
+        }
+        div p {
+            background-color: orange;
+        }
+        div>p {
+            background-color: red;
+        }
+        p {
+            background-color: green;
+        }
+        #myid {
+            color: blue;
+        }
+        .my-heading {
+            color: green;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>heading 1</h1>
+    <h1>heading 2<h1>
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+
+    <h4> heading 4</h4>
+    <h4> heading 4</h4>
+    <h4 id="myid"> heading 4</h4>
+    <h4 class="my-heading"> heading 4</h4>
+    <p>paragraph 1</p>
+    <div>
+        <p>paragraph 2</p>
+        <selection>
+            <p>paragraph 3</p>
+        </selection>
+    </div>
+    <p>paragrapg 4</p>
+</body>
+</html>

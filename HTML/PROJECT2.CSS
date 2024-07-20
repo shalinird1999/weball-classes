@@ -1,0 +1,27 @@
+h1 { font-weight: bold;font-size: 20px;color: #4285f4;padding: 5px;}
+h2 { font-weight: bold;font-size:20px;color:#4285f4;padding:5px;}
+h3 {font-weight: bold;font-size: 20px;color:#4285f4;padding:5px;}
+p { font-size:14px;color:#555;padding:5px;}
+a { text-decoration: non;font-weight: bold;color:#1a0dab;padding:5px;}
+img  {  width :100%;height: auto; border: 2px solid#ccc;border-radius: 8ppx;padding:5px;}
+div { background-color: #f2f2f2;padding: 10px;margin-top: 20px;color:#333;}
+span { color:red;font-weight: bold;padding:5px;}
+em { color: red;font-weight: bold;padding: 5px;}
+strong { color:red;font-weight: bold;padding:5px;}
+br {padding:5px;}
+hr { border:1px solid#ccc;margin:10px 0;}
+code { font-family: 'Courier New', Courier, monospace; background-color: #f8f8f8;padding:5px;}
+sub { font-size: 10px;padding:5px;}
+sup { font-size: 10px;padding: 5px;}
+abbr {text-decoration: underline;cursor:help;padding:5px;}
+mark { background-color: yellow;padding: 5px;}
+ dl { padding:5px;} 
+pre { background-color: #f8f8f8; padding: 10px;border:1px solid#ccc;}
+strong { font-weight:bold; padding:5px;}
+small { font-size: 10px;padding:5px;}
+
+
+
+
+
+

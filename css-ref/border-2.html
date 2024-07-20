@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        h1 {
+            background-color: red;
+        }
+
+        p {
+            background-color: green;
+        }
+
+        span {
+            background-color: blue;
+        }
+
+        div {
+            background-color: yellow;
+        }
+
+        h2 {
+            background-color: purple;
+        }
+
+        h3 {
+            background-color: skyblue;
+        }
+
+        h4 {
+            background-color: hotpink;
+        }
+
+        * {
+            margin: 0;
+            padding: 30px;
+            text-align: center;
+        }  
+
+        h1 {
+            margin: 30px;
+            padding-right: 30px;
+            border: 20px solid black;
+            width: 140px;
+        }
+
+        div {
+            margin-bottom: 10px;
+            padding: 50px;
+            border: 20px dotted green;
+            width: 100px;
+        }
+
+        span {
+            margin: 40px;
+            padding: 40px;
+            border: 20px solid rgb(173, 6, 6);
+        }
+
+        p {
+            margin-bottom:10px;
+            padding: 40px;
+            border: 15px dashed yellow;
+            width: 100px;
+            /* text-align: center; */
+        }
+
+
+        h2 {
+            margin: 40px;
+            padding: 30px;
+            border: 25px solid rgb(43, 226, 125);
+            width: 100px;
+        }
+
+        h3 {
+            margin: 40px;
+            padding: 40px;
+            border: 25px dotted rgb(34, 0, 255);
+            width: 100px;
+        }
+
+        h4 {
+            margin-top: 10px;
+            padding: 40px;
+            border: 30px solid rgb(33, 80, 59);
+            width: 100px;
+        }
+
+        h5 {
+            margin-top: 40px;
+            padding: 40px;
+            border: 30px dashed rgb(216, 9, 9);
+            width: 100px;
+        }
+         /* flex means one row it is defalt  */
+         body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<!-- box model: every element is a rectange (content,padding,border,margin) -->
+    <h1>heading 1</h1>
+    <p>heading 2</p>
+    <span>heading 3</span> 
+    <div>heading 4</div>
+    <h2>heading 5</h2>
+    <h3>heading 6</h3>  
+    <h4>heading 7</h4> 
+</body>
+<!-- </html> -->

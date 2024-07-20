@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Tags</title>
+</head>
+
+<body>
+
+  <!-- 
+      HTML provides elements for creating tables to display tabular data. These elements include <table> (the table itself), <tr> (table rows), <th> (table header cells), <td> (table data cells), <thead> (table head), <tbody> (table body), and <tfoot> (table foot).
+   -->
+  <table border="1">
+    <caption>Simple Table</caption>
+    <tr>
+      <td>Cell R1 C1</td>
+      <td>Cell R1 C2</td>
+    </tr>
+    <tr>
+      <td>Cell R2 C1</td>
+      <td>Cell R2 C2</td>
+    </tr>
+  </table>
+
+  <br>
+
+  <table border="1" width="200">
+    <caption>Table using thead, tbody, tfoot</caption>
+    <thead>
+      <tr>
+        <th>Subj</th>
+        <th>Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>HTML</td>
+        <td>91</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>92</td>
+      </tr>
+      <tr>
+        <td>JS</td>
+        <td>93</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Total</th>
+        <th>276</th>
+      </tr>
+    </tfoot>
+  </table>
+
+  <br>
+
+  <table border="1" width="200">
+    <caption>rowspan and colspan attributes</caption>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Subj</th>
+        <th>Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="3">FED</td>
+        <td>HTML</td>
+        <td>91</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>92</td>
+      </tr>
+      <tr>
+        <td>JS</td>
+        <td>93</td>
+      </tr>
+      <tr>
+        <td rowspan="2">BED</td>
+        <td>Nodejs</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>Mongo DB</td>
+        <td>95</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="2">Total</th>
+        <th>465</th>
+      </tr>
+    </tfoot>
+  </table>
+
+  <br>
+
+  <table border="1">
+    <caption>Nested table</caption>
+    <tr>
+      <th>Device</th>
+      <th>Brand</th>
+      <th>Specifications</th>
+    </tr>
+    <tr>
+      <td>Smartphone</td>
+      <td>Apple</td>
+     <tr>
+      
+      
+        
+        <table border="1">
+          <tr>
+            <th>Model</th>
+            <th>Storage</th>
+          </tr>
+          <tr>
+            <td>iPhone 12 Pro</td>
+            <td>256 GB</td>
+          </tr>
+          <tr>
+            <td>iPhone SE</td>
+            <td>126 GB</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>Laptop</td>
+      <td>HP</td>
+      <td>15.6" Display</td>
+    </tr>
+    <tr>
+      <td>Tablet</td>
+      <td>Samsung</td>
+      <td>10.5" Display</td>
+    </td>
+  </table>
+</body>
+
+</html>
+
+<!-- 
+Tips:
+1. Arrange VS Code & Browser left and right
+2. Use Live Server (automatically relaod the browser on page load) from now onwards  
+
+Assignment:
+1. Search Google images for 'html table structure' and write atleast 3 html from images
+ -->

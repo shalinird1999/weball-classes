@@ -1,0 +1,91 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Practice</title>
+  <style>
+    div {
+      background-color: black;
+      padding: 10px;
+      display: flex;
+      min-height: 150px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      /* margin-top: 100px; */
+      /* practice parent properties here */
+    }
+
+    span {
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      font-size: 50px;
+      text-align: center;
+
+      /* practice child properties here */
+    }
+    
+    span:nth-child(1) {
+      background-color: red;
+      align-self: flex-start;
+      /* text-align: center; */
+    }
+
+    span:nth-child(2) {
+      background-color: blue;
+      align-self: flex-end;
+      
+    }
+
+    span:nth-child(3) {
+      background-color: green;
+    }
+
+    span:nth-child(4) {
+      background-color: yellow;
+      align-self: flex-start;
+    }
+
+    span:nth-child(5) {
+      background-color: orange;
+      align-self: flex-end;
+    }
+
+    span:nth-child(6) {
+        background-color: palevioletred;
+    }    
+    span:nth-child(7) {
+        background-color: blueviolet;
+    }
+
+    /* div:nth-child(2) {
+        background-color: yellow;
+    } */
+
+    /* span:nth-child(7) {
+        background-color: greenyellow;
+    } */
+  </style>
+</head>
+
+<body>
+  <div>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>5</span>
+    <span>6</span>
+   
+  </div>
+  <br>
+  <div>
+    <span>7</span>
+  </div>
+  
+</body>
+
+</html>

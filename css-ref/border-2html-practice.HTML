@@ -1,0 +1,72 @@
+!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        h1 {
+            background-color: green;  
+        }
+
+        span {
+            background-color: yellow;
+        }
+
+        div {
+            background-color: purple;
+        }
+
+        p {
+            background-color:greenyellow;
+        }
+        * {
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 10PX;
+            padding:30 50 50 30px;
+            border: 20px solid black;
+            width: 140px;
+        }
+
+        span {
+            margin-top: 30px;
+            padding: 40px;
+            border:20px dashed purple;
+            width: 100px;
+        }
+
+        div {
+            margin-top:40px;
+            padding-bottom: 30px;
+            border: 20px dotted  rgb(94, 189, 94);
+            width: 100px;
+        }
+
+        p {
+            margin-top: 40px;
+            padding: 30px;
+            border: 20px dotted rgb(192, 18, 18);
+            width: 100px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>heading 1</h1>
+    <span>heading 2</span>
+    <div>heading 3</div>
+    <p>heading 4</p>
+    
+</body>
+</html>

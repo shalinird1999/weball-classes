@@ -1,0 +1,16 @@
+---
+Fullforms:
+---
+HTML → HyperText Markup Language (Content: text, images, documents)
+CSS → Cascading Style Sheet (Styling: colors, alignment)
+JS → JavaScript (Interaction: validation, logic)
+
+Shortcuts:
+
+Ctrl + /
+Ctrl + Enter
+Ctrl + A
+Ctrl + C
+Ctrl + V
+Ctrl + Z
+
