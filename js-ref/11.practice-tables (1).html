@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Practice | Tables</title>
+    </head>
+
+    <body>
+        <h1>Find Table of Any Number</h1>
+        <input type="number" id="num">
+        <button id="btn">Generate</button>
+
+        <script>
+            let btnEl = document.getElementById('btn')
+            let numEl = document.getElementById('num')
+
+            btnEl.addEventListener('click', function () {
+                let n = numEl.value;
+                console.log(n)
+                let output = ''
+
+                for (let a = 1; a < 11; ++a) {
+                    // console.log('<p>' + n + ' x ' + a + ' = ' + n * a + '</p>')
+                    output += '<p>' + n + ' x ' + a + ' = ' + n * a + '</p>';
+                }
+
+                document.body.innerHTML += output;
+            })
+
+
+        </script>
+
+        <!-- <p>13 * 1 = 13</p>
+  <p>13 * 2 = 26</p>
+
+  <p>13 * 10 = 130</p> -->
+
+    </body>
+
+</html>

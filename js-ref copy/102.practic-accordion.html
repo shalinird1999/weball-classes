@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accordion</title>
+        <style>
+            h1 {
+                text-align: center;
+            }
+
+            .wrapper {
+                /* background-color: yellow; */
+                max-width: 500px;
+                margin: 30px auto;
+            }
+
+            .box {
+                border: 1px solid grey;
+                border-bottom: none;
+                margin-bottom: 15px;
+            }
+
+            .box h2,
+            .box p {
+                margin: 0;
+                padding: 10px;
+                border-bottom: 1px solid grey;
+            }
+
+            .box h2 {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                user-select: none;
+            }
+
+            .box h2:hover {
+                background-color: rgb(240, 240, 240);
+            }
+
+            .box h2:active {
+                background-color: white;
+            }
+
+            .box h2 img {
+                width: 16px;
+            }
+
+            .box h2 img.minus {
+                display: none;
+            }
+
+            .box p {
+                display: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Accordion</h1>
+        <hr>
+
+        <div class="wrapper">
+            <div class="box 1">
+                <h2>Heading 1 <img class="plus" src="img/plus.png"><img class="minus" src="img/minus.png">
+                </h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, accusamus fugiat repellendus
+                    laborum
+                    dolorum harum iusto iste, maxime eligendi voluptatum qui similique dicta minima ipsam quisquam
+                    pariatur perferendis, laudantium illo?</p>
+            </div>
+            <div class="box 2">
+                <h2>Heading 2 <img class="plus" src="img/plus.png"><img class="minus" src="img/minus.png"></h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, accusamus fugiat repellendus laborum
+                    dolorum harum iusto iste, maxime eligendi voluptatum qui similique dicta minima ipsam quisquam
+                    pariatur perferendis, laudantium illo?</p>
+            </div>
+            <div class="box 3">
+                <h2>Heading 3 <img class="plus" src="img/plus.png"><img class="minus" src="img/minus.png"></h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, accusamus fugiat repellendus laborum
+                    dolorum harum iusto iste, maxime eligendi voluptatum qui similique dicta minima ipsam quisquam
+                    pariatur perferendis, laudantium illo?</p>
+            </div>
+        </div>
+
+        <script>
+            // let boxes = document.getElementById
+            let boxes = document.getElementsByClassName('box');
+
+            console.log(boxes.length)
+
+            for (let i = 0; i < boxes.length; i++) {
+                let headingEl = boxes[i].querySelector('h2')
+                let paraEl = boxes[i].querySelector('p')
+
+                headingEl.addEventListener('click', function () {
+                    paraEl.style.display = 'block'
+                })
+                console.log(boxes[i])
+                console.log(headingEl)
+            }
+        </script>
+    </body>
+
+</html>

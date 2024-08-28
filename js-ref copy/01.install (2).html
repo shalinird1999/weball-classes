@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Installation Methods</title>
+        <style>
+            button {
+                display: block;
+                margin-bottom: 15px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Install Methods</h1>
+
+        <!-- inline js (rarely use it) -->
+        <button onclick="alert('Welcome to WebAll - Inline!')">Click Me - Inline!</button>
+
+        <button id="internalBtn">Click Me - Internal</button>
+        <button id="externalBtn">Click Me - External</button>
+
+        <!-- internal js (less used, mainly for learning purpose) -->
+        <script>
+            document.getElementById('internalBtn').addEventListener('click', function () { alert('Welcome to WebAll - Internal!')})
+        </script>
+
+        <!-- external js (common use case for projects) -->
+        <script src="script.js"></script>
+    </body>
+
+</html>
