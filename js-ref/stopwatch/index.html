@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stop Watch</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+            }
+
+            h1 {
+                text-align: center;
+                padding: 10px;
+            }
+
+            .stop_watch {
+                background-color: lightgreen;
+                padding: 20px;
+                max-width: 300px;
+                margin: 40px auto;
+                text-align: center;
+            }
+
+            .stop_watch p {
+                font-size: 74px;
+            }
+
+            .stop_watch button {
+                margin-top: 10px;
+                font-size: 30px;
+                width: 100%;
+                text-transform: uppercase;
+                letter-spacing: 6px;
+                background-color: rgb(101, 210, 101);
+                border: none;
+                padding: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Stop Watch</h1>
+        <hr>
+        <div class="stop_watch">
+            <p id="time">00:00:00</p>
+            <button id="btn">Start</button>
+        </div>
+
+        <script>
+            let timeEl = document.getElementById('time')
+            let btnEl = document.getElementById('btn')
+            let intervalId;
+            let seconds = 0, minutes = 0, hours = 0;
+
+            function formatTime(num) {
+                if (num < 10) {
+                    return '0' + num
+                } else {
+                    return num
+                }
+            }
+
+            function updateTime() {
+                seconds++;
+                if (seconds === 60) {
+                    seconds = 0;
+                    minutes++;
+                }
+                if (minutes === 60) {
+                    minutes = 0;
+                    hours++;
+                }
+                // timeEl.textContent = `${formatTime(hours)}:${formatTime(minutes)}:${formatTime(seconds)}`;
+                timeEl.textContent = formatTime(hours) + ":" + formatTime(minutes) + ":" + formatTime(seconds)
+            }
+
+            function startTime() {
+                if (btnEl.textContent === 'Start') {
+                    btnEl.textContent = 'Stop';
+                    intervalId = setInterval(updateTime, 1000); // Start the timer
+                } else {
+                    btnEl.textContent = 'Start';
+                    clearInterval(intervalId); // Stop the timer
+                    seconds = 0;
+                    minutes = 0;
+                    hours = 0;
+                    timeEl.textContent = '00:00:00'; // Reset the display
+                }
+            }
+
+            btnEl.addEventListener('click', startTime)
+        </script>
+    </body>
+
+</html>
